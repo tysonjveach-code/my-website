@@ -29,3 +29,11 @@ nav a {
     margin: 20px;
     border-radius: 10px;
 }
+.skills-table {
+    border-collapse: collapse;
+  }
+  
+  .skills-table th, .skills-table td {
+    border: 1px solid black;
+    padding: 8px;
+  }
