@@ -152,3 +152,8 @@ skills-table {
 .skills-table tr:last-of-type {
     border-bottom: 3px solid #3498db;
 }
+.page{
+    max-width: 900px; 
+    margin: auto;       
+    padding: 20px;  
+}
