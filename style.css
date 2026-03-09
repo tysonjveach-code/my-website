@@ -1,9 +1,10 @@
 body{
-    display: flex;
-    justify-content: center;
+    background-color: white; 
     margin: 0;
     padding: 0;
-    background-color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    justify-content: center;
 }
 .container {
     width: 100%;
@@ -93,19 +94,29 @@ skills-table {
 }
 .page{
     background-color: #2c3e50; 
-    color: #ffffff;
-    max-width: 900px; 
-    margin: 40px auto; 
-    padding: 40px;  
-    box-shadow: 0 4px 15px rgba(0,0,0,0.3); 
-    border-radius: 8px;
+    width: 90%;
+    max-width: 1000px;
+    margin: 40px 0; 
+    border-radius: 12px;
+    overflow: hidden; 
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    color: white;
 }
-.page-header{
-    background-color: #ffffffff; 
-    color: #2c3e50;
-    max-width: 900px; 
-    margin: 40px auto; 
-    padding: 40px;  
-    box-shadow: 0 4px 15px rgba(0,0,0,0.3); 
-    border-radius: 8px;
+.header-section {
+    background-color: white; 
+    color: #2c3e50;          
+    padding: 40px;
+    text-align: center;
+    border-bottom: 4px solid #3498db; 
+}
+
+.header-section h1 {
+    color: #2c3e50; 
+    margin: 0 0 20px 0;
+}
+.content-padding {
+    padding: 40px;
+}
+.content-padding h3 {
+    color: white;
 }
