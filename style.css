@@ -32,7 +32,7 @@ nav a{
 .skills-table{
     border-collapse: collapse;     
     width: 80%;                     
-    margin: 40px auto;             
+    margin: 60px auto;             
     font-family: 'Inter', sans-serif;
     font-size: 18px;
     text-align: center;           
@@ -42,13 +42,14 @@ nav a{
     color: white;
     font-size: 22px;
     font-weight: 600;
-    padding: 20px 15px;           
+    padding: 25px 20px;           
     letter-spacing: 1px;
 }
 .skills-table td{
-    padding: 18px 15px;           
+    padding: 22px 20px;        
     text-align: center;
     font-size: 18px;
+    vertical-align: middle; 
 }
 .skills-table th, .skills-table td{
     border: 1px solid #444;
