@@ -1,19 +1,11 @@
-/*
-body{
-    background-color: white;
-    margin: 0;
-    padding: 0;
-    font-family: 'Inter', sans-serif;
-}
-*/
 html {
-    overflow-y: scroll !important; /* Forces the scrollbar area to exist */
+    overflow-y: scroll !important;
     height: auto !important;
 }
 body {
     min-height: 100vh;
     overflow-y: auto !important;
-    display: block !important; /* Ensures flexbox isn't locking the height */
+    display: block !important; 
 }
 .container {
     width: 100%;
@@ -104,18 +96,6 @@ skills-table {
 .skills-table tr:last-of-type {
     border-bottom: 3px solid #3498db;
 }
-/*
-.page{
-    background-color: #2c3e50; 
-    width: 90%;
-    max-width: 1000px;
-    margin: 40px 0; 
-    border-radius: 12px;
-    overflow: hidden; 
-    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-    color: white;
-}
-*/
 .header-section {
     background-color: white; 
     color: #2c3e50;          
