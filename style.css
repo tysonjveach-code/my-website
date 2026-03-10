@@ -6,6 +6,15 @@ body{
     font-family: 'Inter', sans-serif;
 }
 */
+html {
+    overflow-y: scroll !important; /* Forces the scrollbar area to exist */
+    height: auto !important;
+}
+body {
+    min-height: 100vh;
+    overflow-y: auto !important;
+    display: block !important; /* Ensures flexbox isn't locking the height */
+}
 .container {
     width: 100%;
     max-width: 900px;
@@ -130,12 +139,13 @@ skills-table {
 }
 
 .profile-img {
-    width: 180px;   
-    height: 180px;
+    width: 420px;   
+    height: 420px;
     border-radius: 50%;
     object-fit: cover; 
-    border: 5px solid white;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    border: 8px solid white;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    margin: 20px auto;
 }
 body {
     background-color: white;
