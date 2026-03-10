@@ -141,27 +141,18 @@ body {
     background-color: white;
     margin: 0;
     padding: 0;
-    /* We remove display: flex entirely to ensure scrolling works */
     font-family: 'Inter', sans-serif;
+    height: auto;    
+    overflow-y: auto;
 }
-
-/* 2. The Inner Layer (The Blue Box) */
 .page {
     background-color: #2c3e50;
     color: white;
-    
-    /* This centers the box: */
-    margin: 40px auto; /* 40px space top/bottom, 'auto' centers it left/right */
-    
-    /* This controls the size: */
-    width: 90%;       /* Takes up most of the screen on mobile */
-    max-width: 900px;  /* Stops growing after 900px so it stays a nice 'box' */
-    
+    margin: 40px auto; 
+    width: 90%;      
+    max-width: 900px;  
     border-radius: 12px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-    overflow: hidden; /* Keeps the white header from leaking out the corners */
-    
-    /* Ensure internal text stays away from the edges of the blue box */
-    display: flex;
-    flex-direction: column;
+    position: relative; 
+    min-height: min-content;
 }
