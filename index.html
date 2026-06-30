@@ -1,81 +1,278 @@
 <!DOCTYPE html>
- <html class="page">
-  <head>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
-      <title>Tyson's Gen1 Website</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-   <body>
-    <main class="container">
-      <div class="page">
-        <section class="header-section">
-          <h1>Tyson J Veach</h1> <h3>Email: <a href="mailto:tyson.jveach@gmail.com">tyson.jveach@gmail.com</a></h3>
-          <button onclick="info()"><h3>Click here for more contact information</h3></button>
-          <p id="info"></p>
-        </section>
-    <script src="script.js"></script> 
-    <div class="content-padding">
-    <h3>Quick-Steps</h3>
-    <ul class="menu">
-      <li><a href="Resume.pdf" download="Tyson Veach Resume.pdf">Resume PDF</a></li>
-      <li><a href="projects.html">Projects</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#about">About me</a></li>
-      <li><a href="index.html">Home</a></li>
-    </ul>
-    <div class="profile-container">
-      <img src="profile.jpg" alt="Tyson's Profile Picture" class="profile-img">
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Tyson J Veach — Computer Science student, software developer, and builder. Projects, skills, and contact.">
+  <title>Tyson J Veach — Software Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== NAV ===== -->
+  <header class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#home" class="brand">TV<span class="brand-dot">.</span></a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <a href="Resume.pdf" download="Tyson Veach Resume.pdf" class="nav-resume">Resume</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
     </div>
-    <section id="skills">
-      <h3>Skills</h3>
-      <table class="skills-table">
-      <thead>
-        <tr>
-          <th>Main Skills</th>
-          <th>Software</th>
-          <th>Hardware</th>
-          <th>Languages</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Problem Solving</td>
-          <td>Git</td>
-          <td>Raspberry Pi</td>
-          <td><strong>C++</strong></td>
-        </tr>
-        <tr>
-          <td>Algorithms</td>
-          <td>VS Code</td>
-          <td>Arduino</td>
-          <td><strong>Python</strong></td>
-        </tr>
-        <tr>
-          <td>Data Structures</td>
-          <td>Linux</td>
-          <td>Desktops</td>
-          <td><strong>JavaScript/Java</strong></td>
-        </tr>
-        <tr>
-          <td>Debugging</td>
-          <td>Windows</td>
-          <td rowspan="2">Laptops</td>
-          <td><strong>HTML</strong></td>
-        </tr>
-        <tr>
-          <td>Leadership</td>
-          <td>Eclipse</td>
-          <td><strong>SQL</strong></td>
-        </tr>
-      </tbody>
-      </table>
-    <section id="about">
-    <h3>About Me</h3>
-    <p>I’m a computer science student who enjoys coding, problem solving, and building technology that solves real challenges. I like solving complex problems, finding logical solutions and turning ideas into real things.
-       <br><br> work well in team environments and have taken leadership roles in projects, helping organize development and guide teams toward successful outcomes. I’m always looking to improve my skills and contribute to innovative technical projects. 
-    </p>
-    </section>
-    </main>
-  </div></div>
-  </body>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="home">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="hero-content reveal">
+      <p class="hero-eyebrow">Hi, my name is</p>
+      <h1 class="hero-name">Tyson J Veach</h1>
+      <h2 class="hero-tagline">I build software that solves real problems.</h2>
+      <p class="hero-sub">
+        Computer Science student and developer who loves turning messy ideas into
+        working products — from cloud-hosted web apps to robotics and AI tools.
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">View my work</a>
+        <a href="#contact" class="btn btn-ghost">Get in touch</a>
+      </div>
+      <div class="hero-socials">
+        <a href="https://www.linkedin.com/in/tysonveach/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="mailto:tyson.jveach@gmail.com">Email</a>
+        <a href="Resume.pdf" download="Tyson Veach Resume.pdf">Resume</a>
+      </div>
+    </div>
+    <a href="#about" class="scroll-hint" aria-label="Scroll down">▾</a>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="section" id="about">
+    <div class="section-head reveal">
+      <span class="section-num">01</span>
+      <h2 class="section-title">About Me</h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <p>
+          I'm a Computer Science student who genuinely enjoys coding, problem solving,
+          and building technology that makes a difference. I like digging into complex
+          problems, finding clean logical solutions, and turning ideas into real,
+          working things.
+        </p>
+        <p>
+          I work well in teams and have taken on leadership roles — organizing
+          development, keeping projects on track, and guiding people toward a shared
+          goal. Whether it's a cloud-deployed web app, an embedded robotics system, or
+          a quick weekend experiment, I'm always looking for the next thing to learn
+          and build.
+        </p>
+        <p>
+          When I'm not writing code, I'm usually tinkering with hardware, breaking
+          things to understand how they work, or planning out my next project.
+        </p>
+        <ul class="about-facts">
+          <li><strong>Focus:</strong> Software development &amp; problem solving</li>
+          <li><strong>Currently:</strong> Studying Computer Science</li>
+          <li><strong>Interests:</strong> Cloud, robotics, AI, full-stack web</li>
+        </ul>
+      </div>
+      <div class="about-photo reveal">
+        <div class="photo-frame">
+          <img src="profile.jpg" alt="Tyson J Veach" class="profile-img">
+        </div>
+        <p class="photo-caption">Tyson J Veach</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section class="section" id="skills">
+    <div class="section-head reveal">
+      <span class="section-num">02</span>
+      <h2 class="section-title">Skills &amp; Tools</h2>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-card reveal">
+        <h3>Languages</h3>
+        <div class="tags">
+          <span>C++</span><span>Python</span><span>Java</span>
+          <span>JavaScript</span><span>HTML/CSS</span><span>SQL</span>
+        </div>
+      </div>
+      <div class="skill-card reveal">
+        <h3>Software &amp; Dev Tools</h3>
+        <div class="tags">
+          <span>Git</span><span>VS Code</span><span>Linux</span>
+          <span>Windows</span><span>Eclipse</span><span>AWS</span>
+        </div>
+      </div>
+      <div class="skill-card reveal">
+        <h3>Hardware</h3>
+        <div class="tags">
+          <span>Raspberry Pi</span><span>Arduino</span>
+          <span>Desktops</span><span>Laptops</span>
+        </div>
+      </div>
+      <div class="skill-card reveal">
+        <h3>Core Strengths</h3>
+        <div class="tags">
+          <span>Problem Solving</span><span>Algorithms</span>
+          <span>Data Structures</span><span>Debugging</span><span>Leadership</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section class="section" id="projects">
+    <div class="section-head reveal">
+      <span class="section-num">03</span>
+      <h2 class="section-title">Projects</h2>
+    </div>
+
+    <!-- Featured: Calendar -->
+    <article class="project-featured reveal">
+      <div class="featured-media">
+        <div class="img-placeholder">
+          <img src="calendar.png" alt="Screenshot of RetsCalendar web app" class="featured-img">
+        </div>
+      </div>
+      <div class="featured-body">
+        <p class="featured-label">★ Featured Project</p>
+        <h3>RetsCalendar — Cloud-Hosted Calendar Web App</h3>
+        <p>
+          A full calendar web application that I designed, built, and deployed live to
+          the internet. Honestly, this one was daunting getting everything from
+          the code to the actual hosting working took a while. But by leaning on AWS and
+          a bunch of other tools to handle hosting, networking, and deployment, I got it
+          done and shipped a real, publicly accessible product.
+        </p>
+        <p>
+          It pushed me well past just writing code in an editor, I had to think about
+          servers, domains, and making something reliable enough for real people to
+          actually use. Seeing it go live made all the trial and error worth it.
+        </p>
+        <div class="tags">
+          <span>AWS</span><span>JavaScript</span><span>HTML/CSS</span><span>Deployment</span><span>Networking</span>
+        </div>
+        <div class="project-links">
+          <a href="https://retscalendar.duckdns.org/CalenderMain.html" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Visit Live Site →</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- Grid of other projects -->
+    <div class="projects-grid">
+      <article class="project-card reveal">
+        <div class="card-top">
+          <span class="card-icon">🤖</span>
+          <div class="card-links">
+            <a href="https://www.linkedin.com/in/tysonveach/" target="_blank" rel="noopener" aria-label="LinkedIn">↗</a>
+          </div>
+        </div>
+        <h3>Copilot Onboarding Chatbot</h3>
+        <p>
+          During Summer 2025 I designed an onboarding chatbot to speed up onboarding new
+          employees — cutting down ramp-up time and answering common questions
+          automatically. More details on my LinkedIn.
+        </p>
+        <div class="tags small"><span>AI</span><span>Chatbot</span><span>Automation</span></div>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="card-top"><span class="card-icon">♟️</span></div>
+        <h3>Chess Move Engine</h3>
+        <p>
+          A chess program that focuses on the logic of the game — given a board state, it
+          calculates and lists every legal move available, rather than just letting pieces
+          move freely. A great exercise in rules, state, and algorithms.
+        </p>
+        <div class="tags small"><span>Algorithms</span><span>Logic</span><span>Java</span></div>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="card-top"><span class="card-icon">⭕</span></div>
+        <h3>Tic-Tac-Toe</h3>
+        <p>
+          One of my first fun projects — a clean, playable Tic-Tac-Toe game. Simple on the
+          surface, but a great first step into game logic, win detection, and clean code.
+        </p>
+        <div class="tags small"><span>Game</span><span>Logic</span><span>Beginnings</span></div>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="card-top"><span class="card-icon">🦾</span></div>
+        <h3>FTC Robotics</h3>
+        <p>
+          Competed in FIRST Tech Challenge, helping design and build a competitive robot.
+          Our work took the team all the way to the state competition — a hands-on lesson
+          in engineering, teamwork, and performing under pressure.
+        </p>
+        <div class="tags small"><span>Robotics</span><span>Teamwork</span><span>Hardware</span></div>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="card-top"><span class="card-icon">📷</span></div>
+        <h3>Arduino Facial Recognition</h3>
+        <p>
+          Built a facial recognition system using an Arduino and a camera module —
+          bridging embedded hardware with computer vision and learning how to make
+          constrained devices do something genuinely smart.
+        </p>
+        <div class="tags small"><span>Arduino</span><span>Computer Vision</span><span>Embedded</span></div>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="card-top"><span class="card-icon">🌐</span></div>
+        <h3>This Portfolio Site</h3>
+        <p>
+          The site you're looking at — hand-built with HTML, CSS, and JavaScript. A living
+          project I keep improving as I learn new techniques and ship new work.
+        </p>
+        <div class="tags small"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="section section-contact" id="contact">
+    <div class="contact-inner reveal">
+      <span class="section-num">04</span>
+      <h2 class="section-title">Get In Touch</h2>
+      <p class="contact-lead">
+        I'm always open to new opportunities, collaborations, or just talking tech.
+        Whether you have a question or want to work together, my inbox is open.
+      </p>
+      <a href="mailto:tyson.jveach@gmail.com" class="btn btn-primary btn-lg">Say Hello</a>
+      <div class="contact-details">
+        <div class="contact-item">
+          <span class="contact-label">Email</span>
+          <a href="mailto:tyson.jveach@gmail.com">tyson.jveach@gmail.com</a>
+        </div>
+        <div class="contact-item">
+          <span class="contact-label">Phone</span>
+          <a href="tel:+15632211296">(563) 221-1296</a>
+        </div>
+        <div class="contact-item">
+          <span class="contact-label">LinkedIn</span>
+          <a href="https://www.linkedin.com/in/tysonveach/" target="_blank" rel="noopener">/in/tysonveach</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>Designed &amp; built by Tyson J Veach · <span id="year"></span></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
 </html>
